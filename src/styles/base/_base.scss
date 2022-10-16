@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // font-size: 62.5%; permet de calculer en base 10px
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    width: 375px;
+    margin: auto;
+    @media screen and (min-width: 1440px) {
+        width: 1440px;
+    }
+} 
+
+a {
+    text-decoration: none;
+    color: #FF6060;;
+}

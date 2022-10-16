@@ -1,0 +1,16 @@
+.kasa-banner {
+    width: 335px;
+    height: 111px;
+    img {
+    border-radius: 10px;}
+    // margin: 20px 20px 0px 20px;
+
+    
+    @media screen and (min-width: 1440px) {
+        width: 1240px;
+        height: 223px;
+        img {
+        border-radius: 25px;}
+        margin: 63px 100px 0px 100px;
+    }
+}
