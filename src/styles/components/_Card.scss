@@ -1,22 +1,25 @@
 .kasa-card {
     width: 335px;
     height: 255px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
     border-radius: 10px;
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
+    // background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    margin: 0px 20px 20px 20px;
     &__img {
-        width: 335px;
-        height: 255px;
-        position: absolute;
-        left: 0%;
-        right: 0%;
-        top: 0%;
-        bottom: 0%;
-        background: #FF6060;
+        position: relative;
+        z-index: -1;
         border-radius: 10px;
     }
+
+    @media screen and (min-width: 1440px) {
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+        // background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+        &__img {
+            position: relative;
+            z-index: -1;
+            border-radius: 10px;
+        }
+    }
+
 }

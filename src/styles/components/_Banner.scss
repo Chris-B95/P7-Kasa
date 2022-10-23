@@ -1,16 +1,52 @@
 .kasa-banner {
     width: 335px;
     height: 111px;
-    img {
-    border-radius: 10px;}
-    // margin: 20px 20px 0px 20px;
+    position: relative;
+    margin: 16px 20px 22px 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
 
-    
+    img {
+        position: relative;
+        z-index: -1;
+        border-radius: 10px;
+    }
+
+    p {
+        color: white;
+        width: 217px;
+        text-align: left;
+        font-size: 24px;
+        line-height: 24px;
+        position: absolute;
+        left: 16px;
+        top: 31px;
+    }
+
     @media screen and (min-width: 1440px) {
         width: 1240px;
         height: 223px;
+        margin: 63px 100px 43px 100px;
+        border-radius: 25px;
+        background-color: rgba(0, 0, 0, 0.3);
+
         img {
-        border-radius: 25px;}
-        margin: 63px 100px 0px 100px;
+            position: relative;
+            z-index: -1;
+            border-radius: 25px;
+        }
+
+        p {
+            width: 705px;
+            text-align: center;
+            color: white;
+            font-size: 48px;
+            line-height: 68px;
+            position: absolute;
+            left: 273px;
+            top: 78px;
+        }
+
+
     }
 }
