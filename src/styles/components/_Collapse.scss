@@ -1,16 +1,32 @@
 .collapse-wrapper {
     width: 335px;
+    margin: 0px 20px 20px 20px;
 
 
     @media screen and (min-width: 1440px) {
         width: 1023px;
-        margin: 0px 209px 33px 208px;
+        margin: 0px 209px 30px 208px;
 }
 }
 
 .collapse-header {
     width: 335px;
-    height: 111px;
+    height: 30px;
+    background-color: #ff6060;
+    color: white;
+    border-radius: 5px;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    position: relative;
+    h2 {
+        font-size: 13px;
+        line-height: 30px;
+        padding-left: 12px;
+    }
+    button {
+        position: absolute;
+        right: 0px;
+    }
 
 
     @media screen and (min-width: 1440px) {
@@ -38,6 +54,16 @@
 
 .collapse-opened {
     width: 335px;
+    background-color: #f7f7f7;
+    color: #ff6060;
+    border-radius: 5px;
+    margin: 0px 0px 0px 0px;
+    h3 {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        padding: 23px 7px 52px 12px;
+    }
 
 
     @media screen and (min-width: 1440px) {

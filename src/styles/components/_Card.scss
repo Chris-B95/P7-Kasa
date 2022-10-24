@@ -2,6 +2,17 @@
     width: 335px;
     height: 255px;
     border-radius: 10px;
+    position: relative;
+    margin-bottom: 20px;
+    
+    p {
+        position: absolute;
+        left: 20px;
+        bottom: 15px;
+        font-size: 18px;
+        color: white;
+        line-height: 26px;
+    }
 
     &__img {
         width: 335px;
@@ -14,6 +25,16 @@
         width: 340px;
         height: 340px;
         border-radius: 10px;
+        margin-bottom: 50px;
+
+        p {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+            font-size: 18px;
+            color: white;
+            line-height: 26px;
+        }
 
         &__img {
             width: 340px;

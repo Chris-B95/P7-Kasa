@@ -7,8 +7,12 @@
     @media screen and (min-width: 1440px) {
         width: 1240px;
         margin: 0px 100px 0px 100px;
+        padding: 56px 50px 6px 50px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        column-gap: 60px;
+        background-color: #f7f7f7;
+        border-radius: 25px;
     }
 }
