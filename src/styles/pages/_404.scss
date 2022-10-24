@@ -1,0 +1,64 @@
+.kasa-404 {
+    h1 {
+        margin: 200px 0px 0px 0px;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 137px;
+        text-align: center;
+        color: #ff6060;
+    }
+
+    h2 {
+        margin: 11px 0px 0px 0px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        color: #ff6060;
+    }
+
+    &__nav {
+        margin: 133px 0px 0px 0px;
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: underline;
+        text-align: center;
+
+        // a:hover {
+        //     text-decoration: underline;
+        // }
+
+    }
+    @media screen and (min-width: 1440px) {
+        h1 {
+            margin: 170px 0px 0px 0px;
+            font-weight: 700;
+            font-size: 288px;
+            line-height: 411px;
+            text-align: center;
+            color: #ff6060;
+        }
+
+        h2 {
+            margin: 66px 0px 0px 0px;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 51px;
+            text-align: center;
+            color: #ff6060;
+        }
+
+        &__nav {
+            margin: 182px 0px 0px 0px;
+            text-decoration: underline;
+            text-align: center;
+            font-size: 18px;
+            line-height: 26px;
+
+            // a:hover {
+            //     text-decoration: underline;
+            // }
+
+        }
+    }
+}
