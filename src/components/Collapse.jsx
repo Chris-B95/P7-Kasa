@@ -3,17 +3,22 @@ import '../styles/components/_Collapse.scss'
 
 function Collapse(props) {
     const [isOpen, setIsOpen] = useState(false)
+    let className = ""
     const collapseText = props.texte
-    const openedText = props.description
     const handleClick = (event) => {
         setIsOpen(isOpen ? false : true)
     }
+    if (props.className !== undefined) {
+        className=props.className;
+      } else {
+        className="collapse";
+      }
 
     return (
-        <div>
+        <div className={className}>
             {!isOpen ? (
-                <div className="collapse-wrapper">
-                    <div className="collapse-header">
+                <div className={`${className}__wrapper`}>
+                    <div className={`${className}__header`}>
                         <h2>{collapseText}</h2>
                         <button onClick={handleClick}>
                             Appuyez pour ouvrir
@@ -21,19 +26,20 @@ function Collapse(props) {
                     </div>
                 </div>
             ) : (
-                <div className="collapse-wrapper">
-                    <div className="collapse-header">
+                <div className={`${className}__wrapper`}>
+                    <div className={`${className}__header`}>
                         <h2>{collapseText}</h2>
                         <button onClick={handleClick}>
                             Appuyez pour fermer
                         </button>
                     </div>
-                    <div className="collapse-opened">
-                        <h3>{openedText}</h3>
+                    <div className={`${className}__opened`}>
+                        {props.children}
                     </div>
                 </div>
             )}
         </div>
     )
 }
+
 export default Collapse

@@ -1,9 +1,10 @@
 import { useFetch } from '../hooks/useFetch'
+import { Link } from 'react-router-dom'
 import Card from './Card'
 import '../styles/components/_Cards.scss'
 
 function Cards() {
-    const { isLoading, data, error } = useFetch('./logements.json')
+    const { isLoading, data, error } = useFetch('/logements.json')
     const logsData = data
     const loading = isLoading
     const loadError = error
@@ -18,7 +19,7 @@ function Cards() {
             ) : (
                 <>
                     {logsData.map(({ id, title, cover }) => (
-                        <Card key={id} title={title} cover={cover}></Card>
+                        <Link key={id} to={`/Fiche-Logement/${id}`}><Card  title={title} cover={cover}></Card></Link>
                     ))}
                 </>
             )}

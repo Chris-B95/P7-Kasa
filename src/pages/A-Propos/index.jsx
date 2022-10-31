@@ -27,19 +27,19 @@ function APropos() {
             {!isDesktop && (
                 <>
                     <Banner src={bannermob} />
-                    <Collapse texte="Fiabilité" description={txtFiabilite} />
-                    <Collapse texte="Respect" description={txtRespect}/>
-                    <Collapse texte="Service" description={txtService}/>
-                    <Collapse texte="Sécurité" description={txtSecurite}/>
+                    <Collapse texte="Fiabilité"><p>{txtFiabilite}</p></Collapse>
+                    <Collapse texte="Respect"><p>{txtRespect}</p></Collapse>
+                    <Collapse texte="Service"><p>{txtService}</p></Collapse>
+                    <Collapse texte="Sécurité"><p>{txtSecurite}</p></Collapse>
                 </>
             )}
             {isDesktop && (
                 <>
                     <Banner src={banner} />
-                    <Collapse texte="Fiabilité" description={txtFiabilite} />
-                    <Collapse texte="Respect" description={txtRespect}/>
-                    <Collapse texte="Service" description={txtService}/>
-                    <Collapse texte="Sécurité" description={txtSecurite}/>
+                    <Collapse texte="Fiabilité"><p>{txtFiabilite}</p></Collapse>
+                    <Collapse texte="Respect"><p>{txtRespect}</p></Collapse>
+                    <Collapse texte="Service"><p>{txtService}</p></Collapse>
+                    <Collapse texte="Sécurité"><p>{txtSecurite}</p></Collapse>
                 </>
             )}
         </>

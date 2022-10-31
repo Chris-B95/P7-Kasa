@@ -8,7 +8,7 @@ function Router() {
     return (
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/Fiche-Logement" element={<FicheLogement />} />
+            <Route path="/Fiche-Logement/:id" element={<FicheLogement />} />
             <Route path="/A-Propos" element={<APropos />} />
             <Route path="/*" element={<PageNotFound />} />
         </Routes>

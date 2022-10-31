@@ -1,0 +1,246 @@
+.fiche-img {
+   width: 1240px;
+   height: 415px;
+   border-radius: 25px;
+   margin: 25px 100px 0px 100px;
+
+       img {
+        width: 1240px;
+        height: 415px;
+        border-radius: 25px;
+        object-fit: cover;
+       }
+}
+
+.fiche-title {
+    font-size: 36px;
+    line-height: 51px;
+    color: #ff6060;
+}
+
+.fiche-location {
+    font-size: 18px;
+    line-height: 26px;
+    color: #ff6060;
+}
+
+.fiche-tags {
+    margin-top: 23px;
+    display: flex;
+    &__element {
+        margin-right: 10px;
+    }
+
+}
+
+.fiche-loueur {
+    display: flex;
+    &__name {
+        color: #ff6060;
+        font-size: 18px;
+    }
+    &__pic {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            object-fit: cover;
+           }
+    }
+}
+
+.fiche-rating {
+    margin-top: 24px;
+}
+
+
+
+.wrapper-gauchedroite {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin: 30px 100px 26px 100px;
+}
+
+.collapse-group {
+    margin: 26px 100px 26px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapse-fiche__wrapper {
+    width: 335px;
+    margin: 0px 20px 20px 20px;
+
+
+    @media screen and (min-width: 1440px) {
+        width: 582px;
+        margin: 0px 0px 0px 0px;
+}
+}
+
+.collapse-fiche__header {
+    width: 335px;
+    height: 30px;
+    background-color: #ff6060;
+    color: white;
+    border-radius: 5px;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    position: relative;
+    h2 {
+        font-size: 13px;
+        line-height: 30px;
+        padding-left: 12px;
+    }
+    button {
+        position: absolute;
+        right: 0px;
+    }
+
+
+    @media screen and (min-width: 1440px) {
+        width: 582px;
+        height: 52px;
+        background-color: #ff6060;
+        color: white;
+        border-radius: 5px;
+        margin: 0px 0px 0px 0px;
+        display: flex;
+        position: relative;
+        h2 {
+            font-size: 24px;
+            line-height: 47px;
+            padding-left: 18px;
+        }
+        button {
+            position: absolute;
+            right: 0px;
+        }
+
+
+    }
+}
+
+.collapse-fiche__opened {
+    width: 335px;
+    background-color: #f7f7f7;
+    color: #ff6060;
+    border-radius: 5px;
+    margin: 0px 0px 0px 0px;
+    p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        padding: 23px 7px 52px 12px;
+    }
+
+
+    @media screen and (min-width: 1440px) {
+        width: 582px;
+        background-color: #f7f7f7;
+        color: #ff6060;
+        border-radius: 5px;
+        margin: 0px 0px 0px 0px;
+        p {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 34px;
+            padding: 40px 12px 53px 20px;
+        }
+
+
+    }
+}
+
+.collapse-fichequip__wrapper {
+    width: 335px;
+    margin: 0px 20px 20px 20px;
+
+
+    @media screen and (min-width: 1440px) {
+        width: 582px;
+        margin: 0px 0px 0px 0px;
+}
+}
+
+.collapse-fichequip__header {
+    width: 335px;
+    height: 30px;
+    background-color: #ff6060;
+    color: white;
+    border-radius: 5px;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    position: relative;
+    h2 {
+        font-size: 13px;
+        line-height: 30px;
+        padding-left: 12px;
+    }
+    button {
+        position: absolute;
+        right: 0px;
+    }
+
+
+    @media screen and (min-width: 1440px) {
+        width: 582px;
+        height: 52px;
+        background-color: #ff6060;
+        color: white;
+        border-radius: 5px;
+        margin: 0px 0px 0px 0px;
+        display: flex;
+        position: relative;
+        h2 {
+            font-size: 24px;
+            line-height: 47px;
+            padding-left: 18px;
+        }
+        button {
+            position: absolute;
+            right: 0px;
+        }
+
+
+    }
+}
+
+.collapse-fichequip__opened {
+    width: 335px;
+    background-color: #f7f7f7;
+    color: #ff6060;
+    border-radius: 5px;
+    margin: 0px 0px 0px 0px;
+    p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        padding: 23px 7px 52px 12px;
+    }
+
+
+    @media screen and (min-width: 1440px) {
+        width: 582px;
+        background-color: #f7f7f7;
+        color: #ff6060;
+        border-radius: 5px;
+        margin: 0px 0px 0px 0px;
+        p {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 34px;
+            padding: 0px 0px 0px 0px;
+        }
+
+
+    }
+}
+
+.equiplist {
+    padding: 40px 12px 27px 20px;
+}

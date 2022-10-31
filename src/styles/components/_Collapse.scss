@@ -1,4 +1,4 @@
-.collapse-wrapper {
+.collapse__wrapper {
     width: 335px;
     margin: 0px 20px 20px 20px;
 
@@ -9,7 +9,7 @@
 }
 }
 
-.collapse-header {
+.collapse__header {
     width: 335px;
     height: 30px;
     background-color: #ff6060;
@@ -52,13 +52,13 @@
     }
 }
 
-.collapse-opened {
+.collapse__opened {
     width: 335px;
     background-color: #f7f7f7;
     color: #ff6060;
     border-radius: 5px;
     margin: 0px 0px 0px 0px;
-    h3 {
+    p {
         font-size: 12px;
         font-weight: 400;
         line-height: 17px;
@@ -72,7 +72,7 @@
         color: #ff6060;
         border-radius: 5px;
         margin: 0px 0px 0px 0px;
-        h3 {
+        p {
             font-size: 24px;
             font-weight: 400;
             line-height: 34px;

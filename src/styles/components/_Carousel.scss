@@ -1,0 +1,42 @@
+.carousel-wrapper {
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+    margin: 25px 100px 0px 100px;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.carousel-item {
+    height: 415px;
+    width: 1240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+
+    img {
+        width: 1240px;
+        height: 415px;
+        border-radius: 25px;
+        object-fit: cover;
+       }
+}
+
+.carousel-arrowleft {
+    position: absolute;
+    left: 23px;
+    top: 150px;
+    z-index: 1;
+}
+
+.carousel-arrowright {
+    position: absolute;
+    right: 23px;
+    top: 150px;
+    z-index: 1;
+}
