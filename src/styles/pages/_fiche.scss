@@ -1,27 +1,8 @@
-.fiche-img {
-   width: 1240px;
-   height: 415px;
-   border-radius: 25px;
-   margin: 25px 100px 0px 100px;
-
-       img {
-        width: 1240px;
-        height: 415px;
-        border-radius: 25px;
-        object-fit: cover;
-       }
-}
-
-.fiche-title {
-    font-size: 36px;
-    line-height: 51px;
-    color: #ff6060;
-}
-
-.fiche-location {
-    font-size: 18px;
-    line-height: 26px;
-    color: #ff6060;
+.header-wrapper {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin: 30px 100px 26px 100px;
 }
 
 .fiche-tags {
@@ -33,36 +14,14 @@
 
 }
 
-.fiche-loueur {
+.ownerrating-block {
     display: flex;
-    &__name {
-        color: #ff6060;
-        font-size: 18px;
-    }
-    &__pic {
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-        img {
-            width: 64px;
-            height: 64px;
-            border-radius: 50%;
-            object-fit: cover;
-           }
-    }
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .fiche-rating {
     margin-top: 24px;
-}
-
-
-
-.wrapper-gauchedroite {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    margin: 30px 100px 26px 100px;
 }
 
 .collapse-group {
@@ -96,9 +55,18 @@
         line-height: 30px;
         padding-left: 12px;
     }
-    button {
+    &__arrow {
+        width: 18px;
+        height: 18px;
         position: absolute;
-        right: 0px;
+        right: 5px;
+        top: 6px;
+        transition: transform ease-in 200ms;
+        img {
+            width: 18px;
+            height: 18px;
+            object-fit: cover;
+        }
     }
 
 
@@ -116,9 +84,18 @@
             line-height: 47px;
             padding-left: 18px;
         }
-        button {
+        &__arrow {
+            width: 32px;
+            height: 32px;
             position: absolute;
-            right: 0px;
+            right: 9px;
+            top: 10px;
+            transition: transform ease-in 200ms;
+            img {
+                width: 32px;
+                height: 32px;
+                object-fit: cover;
+            }
         }
 
 
@@ -181,9 +158,18 @@
         line-height: 30px;
         padding-left: 12px;
     }
-    button {
+    &__arrow {
+        width: 18px;
+        height: 18px;
         position: absolute;
-        right: 0px;
+        right: 5px;
+        top: 6px;
+        transition: transform ease-in 200ms;
+        img {
+            width: 18px;
+            height: 18px;
+            object-fit: cover;
+        }
     }
 
 
@@ -201,9 +187,18 @@
             line-height: 47px;
             padding-left: 18px;
         }
-        button {
+        &__arrow {
+            width: 32px;
+            height: 32px;
             position: absolute;
-            right: 0px;
+            right: 9px;
+            top: 10px;
+            transition: transform ease-in 200ms;
+            img {
+                width: 32px;
+                height: 32px;
+                object-fit: cover;
+            }
         }
 
 

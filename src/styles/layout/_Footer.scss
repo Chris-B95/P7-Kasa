@@ -1,0 +1,40 @@
+.kasa-footer {
+
+    width: 375px;
+    height: 209px;
+    background-color: black;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+
+    &__logo {
+        width: 122px;
+        height: 39.44px;
+        margin: 62px auto 29px auto;
+    }
+
+    &__texte {
+        width: 375px;
+        height: 46px;
+        color: white;
+        text-align: center;
+        line-height: 17px;
+        margin: 0px auto 62px auto;
+    }
+
+    @media screen and (min-width: 1440px) {
+
+        width: 1440px;
+
+        &__logo {
+            margin: 66px auto 29px auto;
+        }
+
+        &__texte {
+            width: 513px;
+            line-height: 34px;
+            margin: 0px auto 29px auto;
+        }
+
+    }
+}

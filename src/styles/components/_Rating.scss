@@ -1,0 +1,17 @@
+.starwrap {
+    width: 196px;
+    height: 36px;
+    display: flex;
+    column-gap: 10px;
+
+    &__item {
+        width: 30px;
+        height: 30px;
+
+        img {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+        }
+    }
+}

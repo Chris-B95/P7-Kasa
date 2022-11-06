@@ -23,9 +23,18 @@
         line-height: 30px;
         padding-left: 12px;
     }
-    button {
+    &__arrow {
+        width: 18px;
+        height: 18px;
         position: absolute;
-        right: 0px;
+        right: 5px;
+        top: 6px;
+        transition: transform ease-in 200ms;
+        img {
+            width: 18px;
+            height: 18px;
+            object-fit: cover;
+        }
     }
 
 
@@ -43,9 +52,18 @@
             line-height: 47px;
             padding-left: 18px;
         }
-        button {
+        &__arrow {
+            width: 29px;
+            height: 29px;
             position: absolute;
-            right: 0px;
+            right: 30px;
+            top: 9px;
+            transition: transform ease-in 200ms;
+            img {
+                width: 29px;
+                height: 29px;
+                object-fit: cover;
+            }
         }
 
 
@@ -82,3 +100,25 @@
 
     }
 }
+
+.arrowdown{
+
+        transform: scaleY(-1);
+
+}
+
+.arrowdown:hover {
+    cursor: pointer;
+}
+
+.arrowup:hover {
+    cursor: pointer;
+}
+
+.arrowup{
+
+    transform: scaleY(1);
+
+}
+
+

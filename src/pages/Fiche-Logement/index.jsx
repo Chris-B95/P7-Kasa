@@ -2,6 +2,8 @@ import { useParams } from 'react-router-dom'
 import { useFetch } from '../../hooks/useFetchOneItem'
 import Collapse from '../../components/Collapse'
 import Carousel from '../../components/Carousel'
+import Owner from '../../components/Owner'
+import Renting from '../../components/Renting'
 import Tag from '../../components/Tag'
 import Rating from '../../components/Rating'
 import '../../styles/pages/_fiche.scss'
@@ -25,16 +27,13 @@ function FicheLogement() {
                 <span>loading</span>
             ) : (
                 <>
-                    {/* <div className="fiche-img">
-                        <img src={logsItem.pictures[0]} alt="Logement" />
-                    </div> */}
                     <Carousel imgsArray={logsItem.pictures} />
-                    <div className="wrapper-gauchedroite">
-                        <div className="grp-gauche">
-                            <div className="fiche-title">{logsItem.title}</div>
-                            <div className="fiche-location">
-                                {logsItem.location}
-                            </div>
+                    <div className="header-wrapper">
+                        <div>
+                            <Renting
+                                rentingTitle={logsItem.title}
+                                rentingLocation={logsItem.location}
+                            />
                             <div className="fiche-tags">
                                 {logsItem.tags.map((name) => (
                                     <div className="fiche-tags__element">
@@ -43,19 +42,11 @@ function FicheLogement() {
                                 ))}
                             </div>
                         </div>
-                        <div className="grp-droite">
-                            <div className="fiche-loueur">
-                                <div className="fiche-loueur__name">
-                                    {logsItem.host.name}
-                                </div>
-                                <div className="fiche-loueur__pic">
-                                    <img
-                                        src={logsItem.host.picture}
-                                        alt="Logement"
-                                    />
-                                </div>
-                            </div>
-
+                        <div className="ownerrating-block">
+                            <Owner
+                                ownerName={logsItem.host.name}
+                                ownerPic={logsItem.host.picture}
+                            />
                             <div className="fiche-rating">
                                 <Rating ratingValue={logsItem.rating} />
                             </div>
@@ -66,8 +57,7 @@ function FicheLogement() {
                             className="collapse-fiche"
                             texte="Description"
                         >
-                            {' '}
-                            <p>{logsItem.description}</p>{' '}
+                            <p>{logsItem.description}</p>
                         </Collapse>
                         <Collapse
                             className="collapse-fichequip"
