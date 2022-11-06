@@ -1,22 +1,44 @@
 .owner-profile {
     display: flex;
-    height: 64px;
+    height: 32px;
     &__name {
         color: #ff6060;
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 12px;
+        line-height: 16px;
         text-align: right;
-        margin: 6px 10px 6px 0px;
+        margin: 0px 10px 0px 0px;
     }
     &__pic {
-        width: 64px;
-        height: 64px;
+        width: 32px;
+        height: 32px;
         border-radius: 50%;
         img {
-            width: 64px;
-            height: 64px;
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
             object-fit: cover;
            }
+    }
+    @media screen and (min-width: 1440px) {
+        display: flex;
+        height: 64px;
+        &__name {
+            color: #ff6060;
+            font-size: 18px;
+            line-height: 26px;
+            text-align: right;
+            margin: 6px 10px 6px 0px;
+        }
+        &__pic {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            img {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                object-fit: cover;
+               }
+        }
     }
 }

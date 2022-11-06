@@ -6,6 +6,7 @@ import Owner from '../../components/Owner'
 import Renting from '../../components/Renting'
 import Tag from '../../components/Tag'
 import Rating from '../../components/Rating'
+import useMediaQuery from '../../hooks/useMediaQuery'
 import '../../styles/pages/_fiche.scss'
 
 function FicheLogement() {
@@ -15,6 +16,12 @@ function FicheLogement() {
     const loading = isLoading
     const loadError = error
     const logsItem = item
+
+    const { matches: isDesktop } = useMediaQuery({
+        mixOrMax: 'min',
+        widthOrHeight: 'width',
+        value: 1440,
+    })
 
     console.log(logsData)
     console.log(logsItem)
@@ -35,21 +42,32 @@ function FicheLogement() {
                                 rentingLocation={logsItem.location}
                             />
                             <div className="fiche-tags">
-                                {logsItem.tags.map((name) => (
-                                    <div className="fiche-tags__element">
-                                        <Tag key={name} name={name} />
-                                    </div>
-                                ))}
+                                <Tag tagArray={logsItem.tags} />
                             </div>
                         </div>
                         <div className="ownerrating-block">
-                            <Owner
-                                ownerName={logsItem.host.name}
-                                ownerPic={logsItem.host.picture}
-                            />
-                            <div className="fiche-rating">
-                                <Rating ratingValue={logsItem.rating} />
-                            </div>
+                            {isDesktop && (
+                                <>
+                                    <Owner
+                                        ownerName={logsItem.host.name}
+                                        ownerPic={logsItem.host.picture}
+                                    />
+                                    <div className="fiche-rating">
+                                        <Rating ratingValue={logsItem.rating} />
+                                    </div>
+                                </>
+                            )}
+                            {!isDesktop && (
+                                <>
+                                    <div className="fiche-rating">
+                                        <Rating ratingValue={logsItem.rating} />
+                                    </div>
+                                    <Owner
+                                        ownerName={logsItem.host.name}
+                                        ownerPic={logsItem.host.picture}
+                                    />
+                                </>
+                            )}
                         </div>
                     </div>
                     <div className="collapse-group">

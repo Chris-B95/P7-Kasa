@@ -2,32 +2,65 @@
     display: flex;
     position: relative;
     justify-content: space-between;
-    margin: 30px 100px 26px 100px;
+    flex-direction: column;
+    margin: 15px 20px 16px 20px;
+
+    @media screen and (min-width: 1440px) {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 30px 100px 24px 100px;
+    }
 }
 
 .fiche-tags {
-    margin-top: 23px;
+    margin-top: 10px;
     display: flex;
-    &__element {
-        margin-right: 10px;
+
+    @media screen and (min-width: 1440px) {
+        margin-top: 20px;
+        display: flex;
+
     }
 
 }
 
 .ownerrating-block {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 16px 0px 0px 0px;
+
+    @media screen and (min-width: 1440px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: normal;
+        align-items: flex-end;
+        margin: 0;
+    }
 }
 
 .fiche-rating {
-    margin-top: 24px;
+    padding-top: 9px;
+    @media screen and (min-width: 1440px) {
+        margin-top: 24px;
+    }
 }
 
 .collapse-group {
-    margin: 26px 100px 26px 100px;
+    margin: 0px 0px 44px 0px;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+
+    @media screen and (min-width: 1440px) {
+        margin: 26px 100px 26px 100px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+    }
 }
 
 .collapse-fiche__wrapper {
@@ -38,7 +71,7 @@
     @media screen and (min-width: 1440px) {
         width: 582px;
         margin: 0px 0px 0px 0px;
-}
+    }
 }
 
 .collapse-fiche__header {
@@ -50,11 +83,13 @@
     margin: 0px 0px 0px 0px;
     display: flex;
     position: relative;
+
     h2 {
         font-size: 13px;
         line-height: 30px;
         padding-left: 12px;
     }
+
     &__arrow {
         width: 18px;
         height: 18px;
@@ -62,6 +97,7 @@
         right: 5px;
         top: 6px;
         transition: transform ease-in 200ms;
+
         img {
             width: 18px;
             height: 18px;
@@ -79,11 +115,13 @@
         margin: 0px 0px 0px 0px;
         display: flex;
         position: relative;
+
         h2 {
             font-size: 24px;
             line-height: 47px;
             padding-left: 18px;
         }
+
         &__arrow {
             width: 32px;
             height: 32px;
@@ -91,6 +129,7 @@
             right: 9px;
             top: 10px;
             transition: transform ease-in 200ms;
+
             img {
                 width: 32px;
                 height: 32px;
@@ -108,11 +147,12 @@
     color: #ff6060;
     border-radius: 5px;
     margin: 0px 0px 0px 0px;
+
     p {
         font-size: 12px;
         font-weight: 400;
         line-height: 17px;
-        padding: 23px 7px 52px 12px;
+        padding: 23px 7px 5px 12px;
     }
 
 
@@ -122,6 +162,7 @@
         color: #ff6060;
         border-radius: 5px;
         margin: 0px 0px 0px 0px;
+
         p {
             font-size: 24px;
             font-weight: 400;
@@ -141,7 +182,7 @@
     @media screen and (min-width: 1440px) {
         width: 582px;
         margin: 0px 0px 0px 0px;
-}
+    }
 }
 
 .collapse-fichequip__header {
@@ -153,11 +194,13 @@
     margin: 0px 0px 0px 0px;
     display: flex;
     position: relative;
+
     h2 {
         font-size: 13px;
         line-height: 30px;
         padding-left: 12px;
     }
+
     &__arrow {
         width: 18px;
         height: 18px;
@@ -165,6 +208,7 @@
         right: 5px;
         top: 6px;
         transition: transform ease-in 200ms;
+
         img {
             width: 18px;
             height: 18px;
@@ -182,11 +226,13 @@
         margin: 0px 0px 0px 0px;
         display: flex;
         position: relative;
+
         h2 {
             font-size: 24px;
             line-height: 47px;
             padding-left: 18px;
         }
+
         &__arrow {
             width: 32px;
             height: 32px;
@@ -194,6 +240,7 @@
             right: 9px;
             top: 10px;
             transition: transform ease-in 200ms;
+
             img {
                 width: 32px;
                 height: 32px;
@@ -211,11 +258,12 @@
     color: #ff6060;
     border-radius: 5px;
     margin: 0px 0px 0px 0px;
+
     p {
         font-size: 12px;
         font-weight: 400;
         line-height: 17px;
-        padding: 23px 7px 52px 12px;
+        padding: 0px 0px 0px 0px;
     }
 
 
@@ -225,6 +273,7 @@
         color: #ff6060;
         border-radius: 5px;
         margin: 0px 0px 0px 0px;
+
         p {
             font-size: 24px;
             font-weight: 400;
@@ -237,5 +286,9 @@
 }
 
 .equiplist {
-    padding: 40px 12px 27px 20px;
+    padding: 23px 7px 5px 12px;
+
+    @media screen and (min-width: 1440px) {
+        padding: 40px 12px 27px 20px;
+    }
 }

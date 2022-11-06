@@ -1,42 +1,143 @@
 .carousel-wrapper {
-    width: 1240px;
-    height: 415px;
-    border-radius: 25px;
-    margin: 25px 100px 0px 100px;
-    border-radius: 25px;
+    width: 335px;
+    height: 255px;
+    border-radius: 10px;
+    margin: 27px 20px 0px 20px;
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
     position: relative;
 
-}
-
-.carousel-item {
-    height: 415px;
-    width: 1240px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 25px;
-
-    img {
+    @media screen and (min-width: 1440px) {
         width: 1240px;
         height: 415px;
         border-radius: 25px;
+        margin: 20px 100px 0px 100px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        position: relative;
+    }
+}
+
+.carousel-item {
+    width: 335px;
+    height: 255px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+    img {
+        width: 335px;
+        height: 255px;
+        border-radius: 10px;
         object-fit: cover;
-       }
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 1240px;
+        height: 415px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+
+        img {
+            width: 1240px;
+            height: 415px;
+            border-radius: 25px;
+            object-fit: cover;
+        }
+    }
 }
 
 .carousel-arrowleft {
+
     position: absolute;
-    left: 23px;
-    top: 150px;
+    left: 6px;
+    top: 118px;
     z-index: 1;
+    width: 12px;
+    height: 20px;
+
+    img {
+        width: 12px;
+        height: 20px;
+        object-fit: cover;
+    }
+
+    :hover {
+        cursor: pointer;
+    }
+
+    @media screen and (min-width: 1440px) {
+        position: absolute;
+        left: 23px;
+        top: 157px;
+        z-index: 1;
+        width: 47px;
+        height: 80px;
+
+        img {
+            width: 47px;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        :hover {
+            cursor: pointer;
+        }
+    }
 }
 
 .carousel-arrowright {
     position: absolute;
-    right: 23px;
-    top: 150px;
+    right: 6px;
+    top: 118px;
     z-index: 1;
+    width: 12px;
+    height: 20px;
+
+    img {
+        width: 12px;
+        height: 20px;
+        object-fit: cover;
+    }
+
+    :hover {
+        cursor: pointer;
+    }
+
+    @media screen and (min-width: 1440px) {
+        position: absolute;
+        right: 23px;
+        top: 157px;
+        z-index: 1;
+        width: 47px;
+        height: 80px;
+
+        img {
+            width: 47px;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        :hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.carousel-anim {
+    transition: transform ease-in 1000ms;
+}
+
+.currentImg {
+    color: white;
+    font-size: 18px;
+    line-height: 26px;
+    position: absolute;
+    bottom: 25px;
+    left: 607px;
 }

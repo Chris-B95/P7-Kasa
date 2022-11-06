@@ -9,13 +9,13 @@ function Rating(props) {
 
     return (
         <div className="starwrap">
-            {range.map((rangeElem) =>
+            {range.map((rangeElem, index) =>
                 ratingValue >= rangeElem ? (
-                    <span className="starwrap__item" key={'Star' + rangeElem.toString()}>
+                    <span className="starwrap__item" key={`redstar${index}`}>
                         <img src={redstar} alt="Etoile rouge" />
                     </span>
                 ) : (
-                    <span className="starwrap__item" key={'Star' + rangeElem.toString()}>
+                    <span className="starwrap__item" key={`greystar${index}`}>
                         <img src={greystar} alt="Etoile grise" />
                     </span>
                 )

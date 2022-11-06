@@ -1,11 +1,21 @@
 .renting-title {
-    font-size: 36px;
-    line-height: 51px;
-    color: #ff6060;
-}
-
-.renting-location {
     font-size: 18px;
     line-height: 26px;
     color: #ff6060;
+    @media screen and (min-width: 1440px) {
+        font-size: 36px;
+        line-height: 51px;
+        color: #ff6060;
+    }
+}
+
+.renting-location {
+    font-size: 14px;
+    line-height: 20px;
+    color: #ff6060;
+    @media screen and (min-width: 1440px) {
+        font-size: 18px;
+        line-height: 26px;
+        color: #ff6060;
+    }
 }
