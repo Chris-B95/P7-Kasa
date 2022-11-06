@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export function useFetch(url, id) {
 
@@ -10,6 +11,8 @@ export function useFetch(url, id) {
     const [error, setError] = useState(false)
 
     const [item, setItem] = useState({})
+
+    const navigate = useNavigate()
 
     useEffect(() => {
         if (!url) return
@@ -23,8 +26,18 @@ export function useFetch(url, id) {
                 const data = await response.json()
 
                 setData(data)
-                setItem(data.find(obj => {
-                 return obj.id === (id)}))
+                
+                    data.find((obj) => {
+                        return obj.id === id
+                    })
+                
+                    ? setItem(
+                          data.find((obj) => {
+                              return obj.id === id
+                          })
+                      )
+                    : navigate('/Logement inexistant')
+
             } catch (err) {
                 console.log(err)
 
@@ -36,7 +49,7 @@ export function useFetch(url, id) {
         }
 
         fetchData()
-    }, [url, id])
+    }, [url, id, navigate])
 
     return { isLoading, data, error, item }
 }
