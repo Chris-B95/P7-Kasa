@@ -4,7 +4,7 @@ import Card from './Card'
 import '../styles/components/_Cards.scss'
 
 function Cards() {
-    const { isLoading, data, error } = useFetch('/logements.json')
+    const { isLoading, data, error } = useFetch('/logements.json', "all")
     const logsData = data
     const loading = isLoading
     const loadError = error

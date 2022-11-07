@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import { useFetch } from '../../hooks/useFetchOneItem'
+import { useFetch } from '../../hooks/useFetch'
 import Collapse from '../../components/Collapse'
 import Carousel from '../../components/Carousel'
 import Owner from '../../components/Owner'
