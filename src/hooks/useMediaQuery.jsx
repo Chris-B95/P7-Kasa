@@ -1,3 +1,5 @@
+// Custom hook pour importer différents assets selon la version
+
 import { useState, useEffect } from 'react'
 
 const useMediaQuery = ({ minOrMax, widthOrHeight, value }) => {

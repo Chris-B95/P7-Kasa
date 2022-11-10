@@ -1,14 +1,14 @@
 .kasa-banner {
-    width: 335px;
-    height: fit-content;
-    max-height: 223px;
+    width: 336px;
+    height: 223px;
     position: relative;
-    margin: 16px 20px 22px 20px;
+    margin: 17px 19px 19px 20px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.3);
 
     img {
         position: relative;
+        object-fit: cover;
         z-index: -1;
         border-radius: 10px;
     }
@@ -33,6 +33,7 @@
 
         img {
             position: relative;
+            object-fit: cover;
             z-index: -1;
             border-radius: 25px;
         }

@@ -3,6 +3,7 @@ import Cards from '../../components/Cards'
 import bannermob from '../../assets/banner_mob.png'
 import banner from '../../assets/banner.png'
 import useMediaQuery from '../../hooks/useMediaQuery'
+import '../../styles/pages/_home.scss'
 
 function Home() {
 
@@ -14,7 +15,7 @@ function Home() {
 
     return (
         <>
-            {!isDesktop && <Banner src={bannermob}>Chez vous, partout et ailleurs</Banner>}
+            {!isDesktop && <Banner src={bannermob} className="test">Chez vous,<br></br> partout et ailleurs</Banner>}
             {isDesktop && <Banner src={banner}>Chez vous, partout et ailleurs</Banner>}
             <Cards />
         </>

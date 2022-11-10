@@ -26,7 +26,6 @@ function Collapse(props) {
                     <div className={`${className}__header`}>
                         <h2>{collapseText}</h2>
                         <div
-                            // className={`${className}__header__arrow`}
                             className={`${className}__header__arrow ${isArrowDown ? `arrowdown` : `arrowup`}`}
                             onClick={handleClick}
                         >
@@ -39,7 +38,6 @@ function Collapse(props) {
                     <div className={`${className}__header`}>
                         <h2>{collapseText}</h2>
                         <div
-                            // className={`${className}__header__arrow`}
                             className={`${className}__header__arrow ${isArrowDown ? `arrowdown` : `arrowup`}`}
                             onClick={handleClick}
                         >

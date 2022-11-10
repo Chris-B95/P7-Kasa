@@ -1,3 +1,5 @@
+// Custom hook capable de fetch tous les éléments ou celui de notre choix
+
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 

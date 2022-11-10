@@ -24,8 +24,6 @@ function FicheLogement() {
     })
 
     console.log(logsData)
-    console.log(logsItem)
-    console.log(loading)
     console.log(loadError)
 
     return (

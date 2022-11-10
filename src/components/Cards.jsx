@@ -8,8 +8,6 @@ function Cards() {
     const logsData = data
     const loading = isLoading
     const loadError = error
-    console.log(logsData)
-    console.log(loading)
     console.log(loadError)
 
     return (
