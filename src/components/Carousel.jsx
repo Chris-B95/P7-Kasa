@@ -6,6 +6,7 @@ import useMediaQuery from '../hooks/useMediaQuery'
 
 function Collapse(props) {
     const imgsArray = props.imgsArray
+    const isImgAlone = (imgsArray.length === 1) ? true : false
     const [currentIndex, setCurrentIndex] = useState(0)
     const previousClick = (event) => {
         currentIndex === 0
@@ -25,13 +26,13 @@ function Collapse(props) {
 
     return (
         <div className="carousel-wrapper">
-            <div className="carousel-arrowleft">
+            {!isImgAlone && <div className="carousel-arrowleft">
                 <img
                     src={leftarrow}
                     alt="Fleche precedente"
                     onClick={previousClick}
                 />
-            </div>
+            </div>}
             {imgsArray.map((name, index) => (
                 <div
                     key={`image${index}`}
@@ -46,13 +47,13 @@ function Collapse(props) {
                     )}
                 </div>
             ))}
-            <div className="carousel-arrowright">
+            {!isImgAlone && <div className="carousel-arrowright">
                 <img
                     src={rightarrow}
                     alt="Fleche suivante"
                     onClick={nextClick}
                 />
-            </div>
+            </div>}
         </div>
     )
 }
